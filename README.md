@@ -1,4 +1,4 @@
-You can use the starter package for fatster setup process of [Gatsby Storefront](https://github.com/GatsbyStorefront/gatsby-theme-storefront-shopify).
+You can use the starter package for faster setup process of [Gatsby Storefront](https://github.com/GatsbyStorefront/gatsby-theme-storefront-shopify).
 
 ```sh
 gatsby new store gatsbystorefront/gatsby-starter-storefront-shopify

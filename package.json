@@ -2,7 +2,7 @@
   "name": "@gatsbystorefront/gatsby-starter-storefront-shopify",
   "private": false,
   "description": "A simple starter to get up and developing quickly with Gatsby Storefront",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Pavel Ivanov",
     "email": "paveliv@gmail.com",
