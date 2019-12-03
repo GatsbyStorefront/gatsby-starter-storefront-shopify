@@ -1,34 +1,29 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "dependencies": {
-    "gatsby": "^2.18.4",
-    "gatsby-image": "^2.2.34",
-    "gatsby-plugin-manifest": "^2.2.30",
-    "gatsby-plugin-offline": "^3.0.24",
-    "gatsby-plugin-react-helmet": "^3.1.16",
-    "gatsby-plugin-sharp": "^2.3.4",
-    "gatsby-source-filesystem": "^2.1.39",
-    "gatsby-transformer-sharp": "^2.3.6",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+  "name": "@gatsbystorefront/gatsby-starter-storefront-shopify",
+  "private": false,
+  "description": "A simple starter to get up and developing quickly with Gatsby Storefront",
+  "version": "1.0.0",
+  "author": {
+    "name": "Pavel Ivanov",
+    "email": "paveliv@gmail.com",
+    "url": "https://gatsbystorefront.com/"
   },
-  "devDependencies": {
-    "prettier": "^1.19.1"
+  "dependencies": {
+    "@gatsbystorefront/gatsby-theme-storefront-shopify": "^1.0.1",
+    "gatsby": "^2.13.38",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "gatsbystorefront",
+    "gatsby-theme-storefront-shopify",
+    "gatsby-starter"
   ],
-  "license": "MIT",
+  "license": "MPL-2.0",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -36,9 +31,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/gatsbystorefront/gatsby-starter-storefront-shopify"
   }
 }
