@@ -1,7 +1,7 @@
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
-      alias: { react: require.resolve("react") },
+      alias: { react: require.resolve('react') },
     },
   })
 }
