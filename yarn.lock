@@ -923,10 +923,10 @@
   dependencies:
     elasticlunr "^0.9.5"
 
-"@gatsbystorefront/gatsby-theme-storefront-shopify@^1.0.1":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@gatsbystorefront/gatsby-theme-storefront-shopify/-/gatsby-theme-storefront-shopify-1.0.2.tgz#cd6ecdb197db400f08956309ee881503d0ea4171"
-  integrity sha512-gXJMkQt3GB8SDxs92+AmUq2vIbVLxkVnBmm9SvjgpJah4Mj9yzp4P6WeXY6cEenlMr7X3AItt3jdCfuKIgNfiw==
+"@gatsbystorefront/gatsby-theme-storefront-shopify@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@gatsbystorefront/gatsby-theme-storefront-shopify/-/gatsby-theme-storefront-shopify-2.0.2.tgz#1031a95ea5df1820517925f12844e59e0ace1352"
+  integrity sha512-t0mtAMpnIExeg2D29SnuUzO1XID2WwwnYsbfm5GQGcd8BuSzepr6NEuY13ZbX3YqUBWecRNJlhlYivh9Mkxu8A==
   dependencies:
     "@emotion/core" "^10.0.21"
     "@emotion/styled" "^10.0.17"

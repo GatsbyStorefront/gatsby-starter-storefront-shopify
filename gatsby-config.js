@@ -1,5 +1,5 @@
-require('dotenv').config({ path: `.env` })
-const flattenMenu = require('@gatsbystorefront/gatsby-theme-storefront-shopify/src/utils/flattenMenu')
+require('dotenv').config({ path: `.env` });
+const flattenMenu = require('@gatsbystorefront/gatsby-theme-storefront-shopify/src/utils/flattenMenu');
 
 module.exports = {
   plugins: [
@@ -9,6 +9,7 @@ module.exports = {
         shopName: process.env.GATSBY_SHOP_NAME,
         accessToken: process.env.GATSBY_SHOPIFY_ACCESS_TOKEN,
         basePath: '/',
+        shopifyLite: false,
       },
     },
   ],
@@ -43,7 +44,6 @@ module.exports = {
         'Viber',
       ],
       googleAnalyticsId: 'UA-141525658-5',
-      shopifyLite: false,
       //
       // carousel, collection, product
       //
@@ -347,4 +347,4 @@ module.exports = {
       articlesPerBlogPage: '6',
     },
   },
-}
+};
