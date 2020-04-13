@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@gatsbystorefront/gatsby-theme-storefront-shopify": "^2.1.0",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.13.38",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
