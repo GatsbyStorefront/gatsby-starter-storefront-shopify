@@ -11,7 +11,6 @@ module.exports = {
         basePath: '/',
         shopifyLite: false,
         enableWebp: true,
-        imageQuality: '95',
       },
     },
   ],
