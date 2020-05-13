@@ -11,7 +11,7 @@ module.exports = {
         basePath: '/',
         shopifyLite: false,
         enableWebp: true,
-        imageQuality: '50',
+        imageQuality: '95',
         manifest: {
           name: 'Gatsby Storefront Demo Store',
           short_name: 'Gatsby Storefront',
