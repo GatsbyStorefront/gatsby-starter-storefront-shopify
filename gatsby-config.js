@@ -12,6 +12,11 @@ module.exports = {
         shopifyLite: false,
         enableWebp: true,
         imageQuality: '95',
+        gatsbyImageProps: { 
+          loading: 'eager', 
+          fadeIn: false,
+          durationFadeIn: 500,
+        },
         manifest: {
           name: 'Gatsby Storefront Demo Store',
           short_name: 'Gatsby Storefront',
