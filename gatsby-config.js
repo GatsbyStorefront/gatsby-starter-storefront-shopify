@@ -25,6 +25,9 @@ module.exports = {
           theme_color: '#333',
           display: 'standalone',
           icon: 'src/images/shopping_bag.svg',
+          icon_options: {
+            purpose: 'any maskable',
+          },
           cache_busting_mode: 'none',
         },
       },
