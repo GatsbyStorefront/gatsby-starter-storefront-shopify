@@ -12,8 +12,8 @@ module.exports = {
         shopifyLite: false,
         enableWebp: true,
         imageQuality: '95',
-        gatsbyImageProps: { 
-          loading: 'eager', 
+        gatsbyImageProps: {
+          loading: 'eager',
           fadeIn: false,
           durationFadeIn: 500,
         },
@@ -49,6 +49,8 @@ module.exports = {
         'https://twitter.com',
         'https://youtube.com',
       ],
+      // Payments icons are temporarily disabled, due to large package size and negative impact on Lighthouse 6 performance.
+      // Need to find an alternative package to react-payment-icons-inline.
       payments: ['visa', 'mastercard', 'amex', 'discover', 'shopify', 'paypal'],
       // For available social share buttons see: https://github.com/nygardk/react-share
       shareButtons: [
