@@ -1130,10 +1130,10 @@
   dependencies:
     elasticlunr "^0.9.5"
 
-"@gatsbystorefront/gatsby-theme-storefront-shopify@^2.1.5":
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/@gatsbystorefront/gatsby-theme-storefront-shopify/-/gatsby-theme-storefront-shopify-2.1.5.tgz#6111cd1e46826232f69860ec3657a11cee9ef0ad"
-  integrity sha512-EWa4EuUtizUb1LHMDnW4wrRYLapuShc13eMV7UcP14ngX07Rijvt8zAj4vTMz6c4p1Kj9ZAEOt08jX4VozItUA==
+"@gatsbystorefront/gatsby-theme-storefront-shopify@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/@gatsbystorefront/gatsby-theme-storefront-shopify/-/gatsby-theme-storefront-shopify-2.1.6.tgz#2211ec50f3c02d9527c4522ec33bd5322455e6b2"
+  integrity sha512-iZPV/PvBYV8kpXF9TfxYwD3BCf38pBNEW5R/x15xpQPUHas7lL6WBICKAWrRZ9YAz06NvBfyuTqZ91Rd8GoLXg==
   dependencies:
     "@emotion/core" "^10.0.21"
     "@emotion/styled" "^10.0.17"
