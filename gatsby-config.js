@@ -6,17 +6,16 @@ module.exports = {
     {
       resolve: '@gatsbystorefront/gatsby-theme-storefront-shopify',
       options: {
-        shopName: process.env.GATSBY_SHOP_NAME,
-        accessToken: process.env.GATSBY_SHOPIFY_ACCESS_TOKEN,
-        basePath: '/',
-        shopifyLite: false,
-        enableWebp: true,
-        imageQuality: '95',
-        gatsbyImageProps: {
-          loading: 'eager',
-          fadeIn: false,
-          durationFadeIn: 500,
+        shopify: {
+          shopName: process.env.GATSBY_SHOPIFY_SHOP_NAME,
+          accessToken: process.env.GATSBY_SHOPIFY_ACCESS_TOKEN,
         },
+        gatsbyStorefrontApi: {
+          apiUrl: process.env.GATSBYSTOREFRONT_API_URL,
+          accessToken: process.env.GATSBYSTOREFRONT_ACCESS_TOKEN,
+        },
+        useGatsbyStorefrontApi: false,
+        basePath: '/',
         manifest: {
           name: 'Gatsby Storefront Demo Store',
           short_name: 'Gatsby Storefront',
@@ -52,9 +51,6 @@ module.exports = {
         'https://twitter.com',
         'https://youtube.com',
       ],
-      // Payments icons are temporarily disabled, due to large package size and negative impact on Lighthouse 6 performance.
-      // Need to find an alternative package to react-payment-icons-inline.
-      payments: ['visa', 'mastercard', 'amex', 'discover', 'shopify', 'paypal'],
       // For available social share buttons see: https://github.com/nygardk/react-share
       shareButtons: [
         'Facebook',
@@ -97,39 +93,42 @@ module.exports = {
           ],
         },
         {
-          name: 'Apparel',
-          type: 'collection',
-          handle: 'apparel',
-          textColor: 'white',
-          textBgColor: 'primary',
+          type: 'section',
+          children: [
+            {
+              name: 'Apparel',
+              type: 'collection',
+              handle: 'apparel',
+              textColor: 'white',
+              textBgColor: 'primary',
+            },
+            {
+              name: 'Garden',
+              type: 'collection',
+              handle: 'garden',
+              textColor: 'white',
+              textBgColor: 'primary',
+            },
+          ],
         },
         {
-          name: 'Garden',
-          type: 'collection',
-          handle: 'garden',
-          textColor: 'white',
-          textBgColor: 'primary',
-        },
-        {
-          name: 'Test',
-          type: 'collection',
-          handle: 'test-collection',
-          textColor: 'black',
-          textBgColor: 'white',
-        },
-        {
-          name: 'One product',
-          type: 'product',
-          handle: 'red-sports-tee',
-          textColor: 'black',
-          textBgColor: 'white',
-        },
-        {
-          name: 'Anchor Bracelet Mens',
-          type: 'product',
-          handle: 'leather-anchor',
-          textColor: 'black',
-          textBgColor: 'white',
+          type: 'section',
+          children: [
+            {
+              name: 'Red Sports Tee',
+              type: 'product',
+              handle: 'red-sports-tee',
+              textColor: 'black',
+              textBgColor: 'white',
+            },
+            {
+              name: 'Anchor Bracelet Mens',
+              type: 'product',
+              handle: 'leather-anchor',
+              textColor: 'black',
+              textBgColor: 'white',
+            },
+          ],
         },
         {
           name: 'Yellow Sofa',
@@ -186,11 +185,6 @@ module.exports = {
             type: 'header',
             children: [
               {
-                name: 'Test',
-                type: 'collection',
-                handle: 'test-collection',
-              },
-              {
                 name: 'Garden',
                 type: 'collection',
                 handle: 'garden',
@@ -205,132 +199,12 @@ module.exports = {
                 type: 'header',
                 children: [
                   {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
+                    name: 'External link 1',
                     type: 'external',
                     link: 'https://amazon.com',
                   },
                   {
                     name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
                     type: 'external',
                     link: 'https://amazon.com',
                   },
@@ -338,7 +212,6 @@ module.exports = {
               },
             ],
           },
-          { name: 'Blog', type: 'blog', handle: 'news' },
         ],
       }),
       footerLinks: [
