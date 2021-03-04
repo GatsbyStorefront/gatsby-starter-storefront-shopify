@@ -6,16 +6,26 @@ module.exports = {
     {
       resolve: '@gatsbystorefront/gatsby-theme-storefront-shopify',
       options: {
-        shopName: process.env.GATSBY_SHOP_NAME,
-        accessToken: process.env.GATSBY_SHOPIFY_ACCESS_TOKEN,
+        shopify: {
+          shopName: process.env.GATSBY_SHOPIFY_SHOP_NAME,
+          accessToken: process.env.GATSBY_SHOPIFY_ACCESS_TOKEN,
+        },
+        gatsbyStorefrontApi: {
+          apiUrl: process.env.GATSBYSTOREFRONT_API_URL,
+          accessToken: process.env.GATSBYSTOREFRONT_ACCESS_TOKEN,
+        },
+        useGatsbyStorefrontApi: false,
         basePath: '/',
-        shopifyLite: false,
-        enableWebp: true,
-        imageQuality: '95',
-        gatsbyImageProps: { 
-          loading: 'eager', 
-          fadeIn: false,
-          durationFadeIn: 500,
+        productImagesCarouselProps: {
+          // See: https://github.com/express-labs/pure-react-carousel#carouselprovider-
+          // naturalSlideWidth: 500,
+          // naturalSlideHeight: 500,
+        },
+        product: {
+          maxDescriptionSectionsNumber: 10,
+        },
+        reviews: {
+          reviewsNumberPerPage: 10,
         },
         manifest: {
           name: 'Gatsby Storefront Demo Store',
@@ -25,6 +35,9 @@ module.exports = {
           theme_color: '#333',
           display: 'standalone',
           icon: 'src/images/shopping_bag.svg',
+          icon_options: {
+            purpose: 'any maskable',
+          },
           cache_busting_mode: 'none',
         },
       },
@@ -92,60 +105,49 @@ module.exports = {
           ],
         },
         {
-          name: 'Apparel',
-          type: 'collection',
-          handle: 'apparel',
-          textColor: 'white',
-          textBgColor: 'primary',
+          type: 'section',
+          children: [
+            {
+              name: 'Apparel',
+              type: 'collection',
+              handle: 'apparel',
+              textColor: 'white',
+              textBgColor: 'primary',
+            },
+            {
+              name: 'Garden',
+              type: 'collection',
+              handle: 'garden',
+              textColor: 'white',
+              textBgColor: 'primary',
+            },
+          ],
         },
         {
-          name: 'Garden',
-          type: 'collection',
-          handle: 'garden',
-          textColor: 'white',
-          textBgColor: 'primary',
-        },
-        {
-          name: 'Test',
-          type: 'collection',
-          handle: 'test-collection',
-          textColor: 'black',
-          textBgColor: 'white',
-        },
-        {
-          name: 'One product',
-          type: 'product',
-          handle: 'red-sports-tee',
-          textColor: 'black',
-          textBgColor: 'white',
-        },
-        {
-          name: 'Anchor Bracelet Mens',
-          type: 'product',
-          handle: 'leather-anchor',
-          textColor: 'black',
-          textBgColor: 'white',
-        },
-        {
-          name: 'Yellow Sofa',
-          type: 'product',
-          handle: 'yellow-sofa',
-          textColor: 'black',
-          textBgColor: 'white',
-        },
-        {
-          name: '7 Shakra Bracelet',
-          type: 'product',
-          handle: 'chain-bracelet',
-          textColor: 'black',
-          textBgColor: 'white',
-        },
-        {
-          name: 'White Cotton Shirt',
-          type: 'product',
-          handle: 'white-cotton-shirt',
-          textColor: 'white',
-          textBgColor: 'primary',
+          type: 'section',
+          children: [
+            {
+              name: 'Red Sports Tee',
+              type: 'product',
+              handle: 'red-sports-tee',
+              textColor: 'black',
+              textBgColor: 'white',
+            },
+            {
+              name: 'Anchor Bracelet Mens',
+              type: 'product',
+              handle: 'leather-anchor',
+              textColor: 'black',
+              textBgColor: 'white',
+            },
+            {
+              name: 'Yellow Sofa',
+              type: 'product',
+              handle: 'yellow-sofa',
+              textColor: 'black',
+              textBgColor: 'white',
+            },
+          ],
         },
       ],
       // Menu types: "header", "collection", "product", "link"

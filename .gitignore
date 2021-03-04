@@ -70,3 +70,5 @@ yarn-error.log
 
 schema.json
 Docker/
+# Local Netlify folder
+.netlify
