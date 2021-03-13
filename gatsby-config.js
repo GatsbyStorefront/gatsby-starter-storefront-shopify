@@ -28,8 +28,8 @@ module.exports = {
           reviewsNumberPerPage: 10,
         },
         manifest: {
-          name: 'Gatsby Storefront Demo Store',
-          short_name: 'Gatsby Storefront',
+          name: 'Best interior Studio',
+          short_name: 'interior Studio',
           start_url: '/',
           background_color: '#fff',
           theme_color: '#333',

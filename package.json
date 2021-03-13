@@ -1,10 +1,10 @@
 {
-  "name": "@gatsbystorefront/gatsby-starter-storefront-shopify",
+  "name": "Best Interior Studio",
   "private": false,
   "description": "A simple starter to get up and developing quickly with Gatsby Storefront",
   "version": "4.0.0",
   "author": {
-    "name": "Pavel Ivanov",
+    "name": "Shubhendu",
     "email": "paveliv@gmail.com",
     "url": "https://gatsbystorefront.com/"
   },
