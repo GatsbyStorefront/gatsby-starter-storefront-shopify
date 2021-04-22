@@ -337,13 +337,12 @@ module.exports = {
               },
             ],
           },
-          { name: 'Blog', type: 'blog', handle: 'news' },
         ],
       }),
       footerLinks: [
         {
           name: 'About us',
-          link: '/pages/about',
+          link: '/',
         },
         {
           name: 'Terms of Service',
